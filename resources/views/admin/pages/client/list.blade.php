@@ -374,11 +374,11 @@
                                             <td>
                                                 <div class="dropdown">
                                                     <a aria-label="anchor" href="javascript:void(0);"
-                                                        class="btn btn-icon btn-sm btn-light show"
+                                                        class="btn btn-icon btn-sm btn-light "
                                                         data-bs-toggle="dropdown" aria-expanded="true">
                                                         <i class="fe fe-more-vertical"></i>
                                                     </a>
-                                                    <ul class="dropdown-menu show"
+                                                    <ul class="dropdown-menu "
                                                         style="position: absolute; inset: auto 0px 0px auto; margin: 0px; transform: translate(-51px, -30px);"
                                                         data-popper-placement="top-end" data-popper-reference-hidden=""
                                                         data-popper-escaped="">
