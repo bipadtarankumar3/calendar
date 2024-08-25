@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\admin\AdminAuthController;
 use App\Http\Controllers\admin\BannerController;
 use App\Http\Controllers\admin\CategoryController;
+use App\Http\Controllers\admin\ClientController;
 use App\Http\Controllers\admin\ProductController;
 use App\Http\Controllers\admin\CustomerController;
 use App\Http\Controllers\admin\OrderController;
@@ -30,6 +31,13 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => ['App\Http\
 
 
 
+    Route::group(['prefix' => 'client', 'as' => 'client.'], function () {
+        Route::get('list', [ClientController::class, 'clientList']);
+        Route::get('overview', [CustomerController::class, 'overview']);
+        Route::get('security', [CustomerController::class, 'security']);
+        Route::get('address_and_billing', [CustomerController::class, 'address_and_billing']);
+        Route::get('notification', [CustomerController::class, 'notification']);
+    });
     Route::group(['prefix' => 'customer', 'as' => 'customer.'], function () {
         Route::get('list', [CustomerController::class, 'customerList']);
         Route::get('overview', [CustomerController::class, 'overview']);

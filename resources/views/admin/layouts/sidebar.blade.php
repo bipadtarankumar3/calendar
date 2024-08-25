@@ -55,7 +55,7 @@
                             style="position: relative; left: 0px; top: 0px; margin: 0px; box-sizing: border-box; transform: translate3d(239.2px, 729.6px, 0px); display: block;"
                             data-popper-placement="bottom" data-popper-reference-hidden="" data-popper-escaped="">
                             <li class="slide side-menu__label1"> <a href="javascript:void(0)">Client</a> </li>
-                            <li class="slide "> <a href="index.html" class="side-menu__item ">Client List</a> </li>
+                            <li class="slide "> <a href="{{URL::TO('admin/client/list')}}" class="side-menu__item ">Client List</a> </li>
                             </ul>
                         </li> 
 
