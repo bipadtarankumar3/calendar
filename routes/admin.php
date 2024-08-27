@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\admin\AdminAuthController;
 use App\Http\Controllers\admin\BannerController;
+use App\Http\Controllers\admin\CalanderController;
 use App\Http\Controllers\admin\CategoryController;
 use App\Http\Controllers\admin\ClientController;
 use App\Http\Controllers\admin\ProductController;
@@ -20,6 +21,8 @@ use App\Http\Controllers\admin\GiftController;
 use App\Http\Controllers\admin\ReportsController;
 use App\Http\Controllers\admin\DesignerController;
 use App\Http\Controllers\admin\ProductGeneralController;
+use App\Http\Controllers\admin\TeamController;
+use App\Http\Controllers\admin\UserController;
 
 Route::get('login', [AdminAuthController::class, 'login'])->name('login');
 Route::post('admin-login-action', [AdminAuthController::class, 'adminLoginAction']);
@@ -33,18 +36,21 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => ['App\Http\
 
     Route::group(['prefix' => 'client', 'as' => 'client.'], function () {
         Route::get('list', [ClientController::class, 'clientList']);
-        Route::get('overview', [CustomerController::class, 'overview']);
-        Route::get('security', [CustomerController::class, 'security']);
-        Route::get('address_and_billing', [CustomerController::class, 'address_and_billing']);
-        Route::get('notification', [CustomerController::class, 'notification']);
+        
     });
-    Route::group(['prefix' => 'customer', 'as' => 'customer.'], function () {
-        Route::get('list', [CustomerController::class, 'customerList']);
-        Route::get('overview', [CustomerController::class, 'overview']);
-        Route::get('security', [CustomerController::class, 'security']);
-        Route::get('address_and_billing', [CustomerController::class, 'address_and_billing']);
-        Route::get('notification', [CustomerController::class, 'notification']);
+    Route::group(['prefix' => 'team', 'as' => 'team.'], function () {
+        Route::get('list', [TeamController::class, 'teamList']);
+        
     });
+    Route::group(['prefix' => 'user', 'as' => 'user.'], function () {
+        Route::get('list', [UserController::class, 'userList']);
+        
+    });
+    Route::group(['prefix' => 'calander', 'as' => 'calander.'], function () {
+        Route::get('list', [CalanderController::class, 'calanderList']);
+        
+    });
+ 
 
 
 });

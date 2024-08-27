@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Xintra - Bootstrap 5 Premium Admin &amp; Dashboard Template</title>
+  <title>calender</title>
   <meta name="Description" content="Bootstrap Responsive Admin Web Dashboard HTML5 Template">
   <meta name="Author" content="Spruko Technologies Private Limited">
   <meta name="keywords"
@@ -22,16 +22,18 @@
   <link href="{{ URL::to('public/assets/admin/libs/node-waves/waves.min.css')}}" rel="stylesheet"> <!-- Simplebar Css -->
   <link href="{{ URL::to('public/assets/admin/libs/simplebar/simplebar.min.css')}}" rel="stylesheet"> <!-- Color Picker Css -->
   <link rel="stylesheet" href="{{ URL::to('public/assets/admin/libs/flatpickr/flatpickr.min.css')}}">
-  <link rel="stylesheet" href="{{ URL::to('public/assets/admin/libs/%40simonwep/pickr/themes/nano.min.css')}}"> <!-- Choices Css -->
+  <link rel="stylesheet" href="{{ URL::to('public/assets/admin/libs/@simonwep/pickr/themes/nano.min.css')}}"> <!-- Choices Css -->
   <link rel="stylesheet" href="{{ URL::to('public/assets/admin/libs/choices.js/public/assets/styles/choices.min.css')}}"> <!-- FlatPickr CSS -->
   <link rel="stylesheet" href="{{ URL::to('public/assets/admin/libs/flatpickr/flatpickr.min.css')}}"> <!-- Auto Complete CSS -->
-  <link rel="stylesheet" href="{{ URL::to('public/assets/admin/libs/%40tarekraafat/autocomplete.js/css/autoComplete.css')}}">
+  <link rel="stylesheet" href="{{ URL::to('public/assets/admin/libs/@tarekraafat/autocomplete.js/css/autoComplete.css')}}">
   <!-- FlatPickr CSS -->
   <link rel="stylesheet" href="{{ URL::to('public/assets/admin/libs/flatpickr/flatpickr.min.css')}}">
   <!-- <script type="text/javascript">
 fxbe=document.all;y4kw=fxbe&&!document.getElementById;dhet=fxbe&&document.getElementById;fe3n=!fxbe&&document.getElementById;koil=document.layers;function vh82(vtev){try{if(y4kw)alert("");}catch(e){}if(vtev&&vtev.stopPropagation)vtev.stopPropagation();return false;}function cwjg(){if(event.button==2||event.button==3)vh82();}function ziyu(e){return(e.which==3)?vh82():true;}function s5ed(xjqr){for(amba=0;amba<xjqr.images.length;amba++){xjqr.images[amba].onmousedown=ziyu;}for(amba=0;amba<xjqr.layers.length;amba++){s5ed(xjqr.layers[amba].document);}}function wf4l(){if(y4kw){for(amba=0;amba<document.images.length;amba++){document.images[amba].onmousedown=cwjg;}}else if(koil){s5ed(document);}}function t2jv(e){if((dhet&&event&&event.srcElement&&event.srcElement.tagName=="IMG")||(fe3n&&e&&e.target&&e.target.tagName=="IMG")){return vh82();}}if(dhet||fe3n){document.oncontextmenu=t2jv;}else if(y4kw||koil){window.onload=wf4l;}function x4ze(e){i286=e&&e.srcElement&&e.srcElement!=null?e.srcElement.tagName:"";if(i286!="INPUT"&&i286!="TEXTAREA"&&i286!="BUTTON"){return false;}}function t32t(){return false}if(fxbe){document.onselectstart=x4ze;document.ondragstart=t32t;}if(document.addEventListener){document.addEventListener('copy',function(e){i286=e.target.tagName;if(i286!="INPUT"&&i286!="TEXTAREA"){e.preventDefault();}},false);document.addEventListener('dragstart',function(e){e.preventDefault();},false);}function p5bk(evt){if(evt.preventDefault){evt.preventDefault();}else{evt.keyCode=37;evt.returnValue=false;}}var snn3=1;var i0wl=2;var qm34=4;var d32j=new Array();d32j.push(new Array(i0wl,65));d32j.push(new Array(i0wl,67));d32j.push(new Array(i0wl,80));d32j.push(new Array(i0wl,83));d32j.push(new Array(i0wl,85));d32j.push(new Array(snn3|i0wl,73));d32j.push(new Array(snn3|i0wl,74));d32j.push(new Array(snn3,121));d32j.push(new Array(0,123));function vfm2(evt){evt=(evt)?evt:((event)?event:null);if(evt){var bges=evt.keyCode;if(!bges&&evt.charCode){bges=String.fromCharCode(evt.charCode).toUpperCase().charCodeAt(0);}for(var c9z1=0;c9z1<d32j.length;c9z1++){if((evt.shiftKey==((d32j[c9z1][0]&snn3)==snn3))&&((evt.ctrlKey|evt.metaKey)==((d32j[c9z1][0]&i0wl)==i0wl))&&(evt.altKey==((d32j[c9z1][0]&qm34)==qm34))&&(bges==d32j[c9z1][1]||d32j[c9z1][1]==0)){p5bk(evt);break;}}}}if(document.addEventListener){document.addEventListener("keydown",vfm2,true);document.addEventListener("keypress",vfm2,true);}else if(document.attachEvent){document.attachEvent("onkeydown",vfm2);}
 </script> -->
-
+<style data-fullcalendar="">
+            
+</style>
   <meta http-equiv="imagetoolbar" content="no">
   <style type="text/css">
 
@@ -1069,9 +1071,7 @@ fxbe=document.all;y4kw=fxbe&&!document.getElementById;dhet=fxbe&&document.getEle
 
                     <footer class="footer mt-auto py-3 bg-white text-center">
       <div class="container"> <span class="text-muted"> Copyright © <span id="year">2024</span> <a
-            href="javascript:void(0);" class="text-dark fw-medium">Xintra</a>. Designed with <span
-            class="bi bi-heart-fill text-danger"></span> by <a href="javascript:void(0);"> <span
-              class="fw-medium text-primary">Spruko</span> </a> All rights reserved </span> </div>
+            href="javascript:void(0);" class="text-dark fw-medium">calender</a> All rights reserved </span> </div>
     </footer> <!-- Footer End -->
     <div class="modal fade" id="header-responsive-search" tabindex="-1" aria-labelledby="header-responsive-search"
       aria-hidden="true">
@@ -1088,7 +1088,7 @@ fxbe=document.all;y4kw=fxbe&&!document.getElementById;dhet=fxbe&&document.getEle
     </div>
   </div> 
   
-  
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
   <!-- Scroll To Top -->
   <div class="scrollToTop" style="display: none;"> <span class="arrow"><i
         class="ti ti-arrow-narrow-up fs-20"></i></span> </div>
@@ -1106,6 +1106,12 @@ fxbe=document.all;y4kw=fxbe&&!document.getElementById;dhet=fxbe&&document.getEle
   <script type="text/javascript"></script> <!-- Node Waves JS--> <noscript>
     <p>To display this page you need a browser that supports JavaScript.</p>
   </noscript>
+
+
+  <script src="{{ URL::to('public/assets/admin/js/moment.js')}}"></script>
+  <script src="{{ URL::to('public/assets/admin/libs/fullcalendar/index.global.min.js')}}"></script>
+  <script src="{{ URL::to('public/assets/admin/js/fullcalendar.js')}}"></script>
+
   <script src="{{ URL::to('public/assets/admin/libs/node-waves/waves.min.js')}}"></script>
   <script type="text/javascript"></script> <!-- Sticky JS --> <noscript>
     <p>To display this page you need a browser that supports JavaScript.</p>
@@ -1135,6 +1141,11 @@ fxbe=document.all;y4kw=fxbe&&!document.getElementById;dhet=fxbe&&document.getEle
     <p>To display this page you need a browser that supports JavaScript.</p>
   </noscript>
   <script src="{{ URL::to('public/assets/admin/libs/apexcharts/apexcharts.min.js')}}"></script>
+  <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
+  <script src="https://cdn.datatables.net/responsive/2.3.0/js/dataTables.responsive.min.js"></script>
+  <script src="{{ URL::to('public/assets/admin/js/datatables.js')}}"></script>
+
   <script type="text/javascript"></script> <!-- Sales Dashboard --> <noscript>
     <p>To display this page you need a browser that supports JavaScript.</p>
   </noscript>

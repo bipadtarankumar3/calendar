@@ -2,13 +2,17 @@
       <div class="main-header-container container-fluid"> <!-- Start::header-content-left -->
         <div class="header-content-left"> <!-- Start::header-element -->
           <div class="header-element">
-            <div class="horizontal-logo"> <a href="index.html" class="header-logo"> <img
-                  src="../assets/images/brand-logos/desktop-logo.png" alt="logo" class="desktop-logo"> <img
+            <div class="horizontal-logo"> 
+              <a href="index.html" class="header-logo">
+                <img src="{{ URL::to('public/assets/admin/image/logo.jpg') }}" alt="logo" class="logo">
+               {{-- <img
                   src="../assets/images/brand-logos/toggle-dark.png" alt="logo" class="toggle-dark"> <img
                   src="../assets/images/brand-logos/desktop-dark.png" alt="logo" class="desktop-dark"> <img
                   src="../assets/images/brand-logos/toggle-logo.png" alt="logo" class="toggle-logo"> <img
                   src="../assets/images/brand-logos/toggle-white.png" alt="logo" class="toggle-white"> <img
-                  src="../assets/images/brand-logos/desktop-white.png" alt="logo" class="desktop-white"> </a> </div>
+                  src="../assets/images/brand-logos/desktop-white.png" alt="logo" class="desktop-white"> --}}
+                 </a>
+                 </div>
           </div> <!-- End::header-element --> <!-- Start::header-element -->
           <div class="header-element mx-lg-0 mx-2"> <a aria-label="Hide Sidebar"
               class="sidemenu-toggle header-link animated-arrow hor-toggle horizontal-navtoggle"
@@ -31,29 +35,24 @@
               class="header-link dropdown-toggle" id="mainHeaderProfile" data-bs-toggle="dropdown"
               data-bs-auto-close="outside" aria-expanded="false">
               <div class="d-flex align-items-center">
-                <div> <img src="../assets/images/faces/15.jpg" alt="img" class="avatar avatar-sm"> </div>
+                <div>  <img src="{{ URL::to('public/assets/admin/image/logo.jpg') }}" alt="logo" class="avatar avatar-sm"> </div>
               </div>
             </a> <!-- End::header-link|dropdown-toggle -->
             <ul
               class="main-header-dropdown dropdown-menu pt-0 overflow-hidden header-profile-dropdown dropdown-menu-end"
               aria-labelledby="mainHeaderProfile">
               <li>
-                <div class="dropdown-item text-center border-bottom"> <span> Mr.Henry </span> <span
-                    class="d-block fs-12 text-muted">UI/UX Designer</span> </div>
+                <div class="dropdown-item text-center border-bottom"> <span>{{Auth::user()->name}}</span> <span
+                    class="d-block fs-12 text-muted">{{Auth::user()->email}}</span> </div>
               </li>
               <li><a class="dropdown-item d-flex align-items-center" href="profile.html"><i
                     class="fe fe-user p-1 rounded-circle bg-primary-transparent me-2 fs-16"></i>Profile</a></li>
-              <li><a class="dropdown-item d-flex align-items-center" href="mail.html"><i
-                    class="fe fe-mail p-1 rounded-circle bg-primary-transparent me-2 fs-16"></i>Mail Inbox</a></li>
-              <li><a class="dropdown-item d-flex align-items-center" href="file-manager.html"><i
-                    class="fe fe-database p-1 rounded-circle bg-primary-transparent klist me-2 fs-16"></i>File
-                  Manger<span class="badge bg-primary1 text-fixed-white ms-auto fs-9">2</span></a></li>
+             
               <li><a class="dropdown-item d-flex align-items-center" href="mail-settings.html"><i
                     class="fe fe-settings p-1 rounded-circle bg-primary-transparent ings me-2 fs-16"></i>Settings</a>
               </li>
-              <li class="border-top bg-light"><a class="dropdown-item d-flex align-items-center" href="chat.html"><i
-                    class="fe fe-help-circle p-1 rounded-circle bg-primary-transparent set me-2 fs-16"></i>Help</a></li>
-              <li><a class="dropdown-item d-flex align-items-center" href="sign-in-cover.html"><i
+             
+              <li><a class="dropdown-item d-flex align-items-center" href="{{URL::To('admin/logout')}}"><i
                     class="fe fe-lock p-1 rounded-circle bg-primary-transparent ut me-2 fs-16"></i>Log Out</a></li>
             </ul>
           </li> <!-- End::header-element --> <!-- Start::header-element -->
